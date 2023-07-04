@@ -1,0 +1,4 @@
+// Added "next/babel" because of ESLINT issues. Check if it needs to be changed for production!
+{
+  "extends": ["next/babel", "next/core-web-vitals"]
+}
