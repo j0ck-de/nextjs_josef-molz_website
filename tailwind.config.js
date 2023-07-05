@@ -11,6 +11,10 @@ module.exports = {
         primary: "#000",
         secondary: "#ccc",
       },
+      height: {
+        header: "2.5rem",
+        hero: 'calc(100vh - theme("height.header"))',
+      },
     },
   },
   plugins: [require("tailwindcss-debug-screens")],

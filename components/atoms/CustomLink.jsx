@@ -3,12 +3,12 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-export function NavLink({ url, className, children }) {
+export function NavLink({ url, className = "", children }) {
   // Get the current pathname
   const router = usePathname();
 
   return (
-    <Link href={url} className={`${className} group relative`}>
+    <Link href={url} className={`group relative ${className}`}>
       {children}
 
       {/* when pathname matches, add span and effect */}

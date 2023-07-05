@@ -5,6 +5,21 @@ export const navLinks = [
     url: "/",
   },
   {
+    id: "about",
+    text: "About",
+    url: "/about",
+  },
+  {
+    id: "projects",
+    text: "Projects",
+    url: "/projects",
+  },
+  {
+    id: "contact",
+    text: "Contact",
+    url: "/contact",
+  },
+  {
     id: "playground",
     text: "Playground",
     url: "/playground",

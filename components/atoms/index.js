@@ -1,2 +1,4 @@
 import { NavLink } from "./CustomLink";
-export { NavLink };
+import Logo from "./Logo";
+
+export { NavLink, Logo };

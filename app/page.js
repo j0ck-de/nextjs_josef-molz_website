@@ -1,5 +1,12 @@
-import CustomLink from "@/components/atoms/CustomLink";
+import { Hero, About, Projects, Contact } from "@/components/organisms";
 
 export default function Home() {
-  return <main className="">Josef Molz Website</main>;
+  return (
+    <>
+      <Hero />
+      <About />
+      <Projects />
+      <Contact />
+    </>
+  );
 }
