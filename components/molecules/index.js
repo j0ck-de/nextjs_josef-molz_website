@@ -1,3 +1,4 @@
 import Navbar from "./Navbar";
+import HeroText from "./HeroText";
 
-export { Navbar };
+export { Navbar, HeroText };

@@ -2,16 +2,37 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Eudoxus Sans", sans-serif;
-  scroll-behavior: smooth;
-}
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
 
-html,
-body {
-  height: 100%;
-  margin: 0;
+  html,
+  body {
+    height: 100%;
+    margin: 0;
+  }
+
+  body {
+    @apply font-martel-sans font-light;
+  }
+
+  h1,
+  h2 {
+    @apply font-nunito-sans font-extrabold !leading-none tracking-tighter;
+  }
+
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-amatic-sc font-medium !leading-none tracking-tight;
+  }
+
+  p {
+    @apply !leading-none;
+  }
 }

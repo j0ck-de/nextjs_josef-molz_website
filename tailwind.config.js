@@ -7,13 +7,18 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        "nunito-sans": ["var(--font-nunito-sans)"],
+        "amatic-sc": ["var(--font-amatic-sc)"],
+        "martel-sans": ["var(--font-martel-sans)"],
+      },
       colors: {
         primary: "#000",
         secondary: "#ccc",
       },
       height: {
         header: "2.5rem",
-        hero: 'calc(100vh - theme("height.header"))',
+        hero: 'calc(theme("height.screen") - theme("height.header"))',
       },
     },
   },
