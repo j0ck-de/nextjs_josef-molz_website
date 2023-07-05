@@ -18,7 +18,7 @@ module.exports = {
       },
       height: {
         header: "4rem",
-        hero: 'calc(theme("height.screen") - theme("height.header"))',
+        hero: '100vh - theme("height.header"))',
       },
       margin: {
         header: 'theme("height.header")',

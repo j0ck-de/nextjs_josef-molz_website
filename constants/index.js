@@ -9,21 +9,21 @@ export const navLinks = [
     text: "About",
     url: "/about",
   },
-  {
-    id: "projects",
-    text: "Projects",
-    url: "/projects",
-  },
+  // {
+  //   id: "projects",
+  //   text: "Projects",
+  //   url: "/projects",
+  // },
   {
     id: "contact",
     text: "Contact",
     url: "/contact",
   },
-  {
-    id: "playground",
-    text: "Playground",
-    url: "/playground",
-  },
+  // {
+  //   id: "playground",
+  //   text: "Playground",
+  //   url: "/playground",
+  // },
   // {
   //   id: "test",
   //   text: "Test",
