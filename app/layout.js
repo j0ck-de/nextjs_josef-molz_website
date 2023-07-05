@@ -30,7 +30,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${nunitoSans.variable} ${amaticSC.variable} ${martelSans.variable} container debug-screens mx-auto px-4 `}
+        className={`${nunitoSans.variable} ${amaticSC.variable} ${martelSans.variable} container debug-screens mx-auto font-body`}
       >
         <Header />
         <main className="">{children}</main>

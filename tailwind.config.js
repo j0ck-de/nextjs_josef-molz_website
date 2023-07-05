@@ -8,13 +8,13 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        "nunito-sans": ["var(--font-nunito-sans)"],
-        "amatic-sc": ["var(--font-amatic-sc)"],
-        "martel-sans": ["var(--font-martel-sans)"],
+        heading: ["var(--font-nunito-sans)"],
+        subheading: ["var(--font-amatic-sc)"],
+        body: ["var(--font-martel-sans)"],
       },
       colors: {
         primary: "#000",
-        secondary: "#ccc",
+        secondary: "#fff",
       },
       height: {
         header: "2.5rem",

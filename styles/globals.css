@@ -16,23 +16,25 @@
     margin: 0;
   }
 
+  /*
   body {
-    @apply font-martel-sans font-light;
+    @apply font-body font-light;
   }
 
   h1,
   h2 {
-    @apply font-nunito-sans font-extrabold !leading-none tracking-tighter;
+    @apply font-heading font-extrabold !leading-[0.85] tracking-tighter;
   }
 
   h3,
   h4,
   h5,
   h6 {
-    @apply font-amatic-sc font-medium !leading-none tracking-tight;
+    @apply font-subheading font-medium !leading-none tracking-tight;
   }
 
   p {
-    @apply !leading-none;
+    @apply font-extralight !leading-tight tracking-tight;
   }
+  */
 }
