@@ -17,8 +17,11 @@ module.exports = {
         secondary: "#fff",
       },
       height: {
-        header: "2.5rem",
+        header: "4rem",
         hero: 'calc(theme("height.screen") - theme("height.header"))',
+      },
+      margin: {
+        header: 'theme("height.header")',
       },
     },
   },

@@ -1,5 +1,5 @@
 "use client";
-
+import clsxm from "@/utils/clsxm";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
@@ -8,14 +8,26 @@ export function NavLink({ url, className = "", children }) {
   const router = usePathname();
 
   return (
-    <Link href={url} className={`group relative ${className}`}>
+    <Link
+      href={url}
+      className={clsxm(
+        "group", // State
+        "relative", // Layout
+        `${className}` // Props
+      )}
+    >
       {children}
 
       {/* when pathname matches, add span and effect */}
       <span
-        className={`ease absolute -bottom-0.5 left-0 inline-block h-[1px] w-0 bg-primary transition-[width] duration-300 group-hover:w-full ${
-          router === url ? "w-full" : "w-0"
-        }`}
+        className={clsxm(
+          "absolute -bottom-[0.01rem] left-0 inline-block", // Layout
+          "h-[1.6px] w-0", // Sizing
+          `${router === url ? "w-full" : "w-0"}`, // Sizing Bool
+          "bg-primary", // Background
+          "group-hover:w-full", // State
+          "ease transition-[width] duration-300" // Transition & Animation
+        )}
       >
         &nbsp;
       </span>

@@ -1,3 +1,4 @@
+import clsxm from "@/utils/clsxm";
 import "@/styles/globals.css";
 import { Nunito_Sans, Amatic_SC, Martel_Sans } from "next/font/google";
 
@@ -30,10 +31,16 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${nunitoSans.variable} ${amaticSC.variable} ${martelSans.variable} container debug-screens mx-auto font-body`}
+        className={clsxm(
+          `${nunitoSans.variable} ${amaticSC.variable} ${martelSans.variable}`, // NextJs Fonts
+          "container", // Layout
+          "mx-auto", // Spacing
+          "font-body", // Typography
+          "debug-screens" // Plugin
+        )}
       >
         <Header />
-        <main className="">{children}</main>
+        <main>{children}</main>
       </body>
     </html>
   );
