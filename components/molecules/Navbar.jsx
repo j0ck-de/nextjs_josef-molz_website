@@ -1,11 +1,15 @@
+"use client";
+
 import { navLinks } from "@/constants";
-import { CustomLink } from "@/components/atoms";
+import { NavLink } from "@/components/atoms";
 
 export default function Navbar() {
   return (
     <nav className="flex justify-end space-x-4 ">
       {navLinks.map((navLink) => (
-        <CustomLink url={navLink.url}>{navLink.text}</CustomLink>
+        <NavLink url={navLink.url} key={navLink.id}>
+          {navLink.text}
+        </NavLink>
       ))}
     </nav>
   );

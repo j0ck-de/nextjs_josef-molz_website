@@ -6,7 +6,12 @@ module.exports = {
     "./styles/**/*.{js,jsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        primary: "#000",
+        secondary: "#ccc",
+      },
+    },
   },
   plugins: [require("tailwindcss-debug-screens")],
 };

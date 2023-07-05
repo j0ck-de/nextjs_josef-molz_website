@@ -1,2 +1,2 @@
-import CustomLink from "./CustomLink";
-export { CustomLink };
+import { NavLink } from "./CustomLink";
+export { NavLink };
