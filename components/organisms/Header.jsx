@@ -6,6 +6,7 @@ export default function Header() {
   return (
     <header
       className={clsxm(
+        "relative", // Layout
         "flex items-center justify-between", // Flex
         "h-header" // Sizing
       )}

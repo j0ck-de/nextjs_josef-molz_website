@@ -172,7 +172,7 @@ export default function ImageSlider({ slides, duration, className = "" }) {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.1, duration: 0.4 }}
               className={clsxm(
-                "absolute bottom-6 m-8", // Layout
+                "absolute bottom-4 m-8 lg:bottom-8", // Layout
                 "text-md text-center text-secondary", // Typography
                 "bg-primary", // Background
                 "outline outline-1 outline-offset-4 lg:outline-2 lg:outline-offset-4" // Borders
@@ -181,7 +181,7 @@ export default function ImageSlider({ slides, duration, className = "" }) {
               <Paragraph
                 className={clsxm(
                   "px-1 py-2 md:px-2 md:py-4", // Spacing
-                  "font-subheading !text-base md:!text-2xl lg:!text-3xl" // Typography
+                  "font-subheading !text-xl md:!text-2xl lg:!text-3xl" // Typography
                 )}
               >
                 {slides[currentIndex].text}

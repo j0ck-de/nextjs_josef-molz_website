@@ -31,13 +31,6 @@ export const navLinks = [
   // },
 ];
 
-export const heroText = {
-  heading: "Hi, ich bin Jock.",
-  subHeading: "Frontend-Entwickler und UX/UI Designer aus dem Bayrischen Wald.",
-  paragraph:
-    "... Autodidakt in sämtlichen Lebenslagen, kreativer Problemlöser strukturierter Denker und ein herzlicher Mensch, gepaart mit einem starken Willen.",
-};
-
 export const heroSlides = [
   {
     id: "world-1",

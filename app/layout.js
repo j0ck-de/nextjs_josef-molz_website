@@ -32,15 +32,24 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body
         className={clsxm(
-          `${nunitoSans.variable} ${amaticSC.variable} ${martelSans.variable}`, // NextJs Fonts
-          "container", // Layout
-          "mx-auto", // Spacing
-          "font-body", // Typography
-          "debug-screens" // Plugin
+          `${nunitoSans.variable} ${amaticSC.variable} ${martelSans.variable}` // NextJs Fonts
         )}
       >
-        <Header />
-        <main>{children}</main>
+        <div className="body-bg">
+          <div className="gradient"></div>
+        </div>
+        <div
+          className={clsxm(
+            `${nunitoSans.variable} ${amaticSC.variable} ${martelSans.variable}`, // NextJs Fonts
+            "container", // Layout
+            "mx-auto", // Spacing
+            "font-body", // Typography
+            "debug-screens" // Plugin>
+          )}
+        >
+          <Header />
+          <main>{children}</main>
+        </div>
       </body>
     </html>
   );
