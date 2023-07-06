@@ -10,7 +10,7 @@ export function Heading({
         <h1
           className={clsxm(
             "font-heading",
-            "text-7xl font-extrabold leading-[0.85] tracking-tighter sm:text-8xl sm:leading-[0.9] lg:text-9xl lg:leading-[0.85]", // Typography
+            "text-7xl font-extrabold leading-[0.85] tracking-tighter sm:text-8xl sm:leading-[0.9] lg:text-9xl lg:leading-[0.85] landscape:text-6xl", // Typography
             `${className}` // Props
           )}
         >
@@ -20,7 +20,7 @@ export function Heading({
       {size === "medium" && (
         <h3
           className={clsxm(
-            "font-subheading text-2xl font-medium leading-[0.9] tracking-tight sm:text-3xl sm:leading-[1] md:text-4xl md:leading-[0.95]", // Typography
+            "font-subheading text-2xl font-medium leading-[0.9] tracking-tight sm:text-3xl sm:leading-[1] md:text-4xl md:leading-[0.95] landscape:text-xl", // Typography
             `${className}` // Props
           )}
         >

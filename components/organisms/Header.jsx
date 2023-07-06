@@ -8,6 +8,7 @@ export default function Header() {
       className={clsxm(
         "relative", // Layout
         "flex items-center justify-between", // Flex
+        "px-4 md:px-0   ", // Spacing
         "h-header" // Sizing
       )}
     >
