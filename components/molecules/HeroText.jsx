@@ -6,7 +6,7 @@ export default function HeroText({ className = "" }) {
   return (
     <div
       className={clsxm(
-        "px-4 lg:px-8", // Spacing
+        "px-4 lg:px-8 ", // Spacing
         `${className}` // Props
       )}
     >

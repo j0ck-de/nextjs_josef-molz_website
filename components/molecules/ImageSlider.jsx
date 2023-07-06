@@ -3,6 +3,7 @@ import clsxm from "@/utils/clsxm";
 import { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import { Paragraph } from "@/components/atoms";
+import { FiChevronLeft, FiChevronRight, FiPlay, FiPause } from "react-icons/fi";
 
 const slideVariants = {
   hidden: { opacity: 0, scale: 0.95 },
@@ -125,33 +126,31 @@ export default function ImageSlider({ slides, duration, className = "" }) {
             "text-secondary" // Typography
           )}
         >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            fill="currentColor"
+          <FiChevronLeft
             onClick={handlePrev}
-            className="absolute left-2 top-[50%] z-10 h-12 -translate-y-1/2 cursor-pointer transition delay-150 duration-200 ease-in-out hover:fill-primary"
-          >
-            <path
-              fillRule="evenodd"
-              d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm-4.28 9.22a.75.75 0 000 1.06l3 3a.75.75 0 101.06-1.06l-1.72-1.72h5.69a.75.75 0 000-1.5h-5.69l1.72-1.72a.75.75 0 00-1.06-1.06l-3 3z"
-              clipRule="evenodd"
-            />
-          </svg>
+            size={48}
+            className={clsxm(
+              "absolute left-2 top-[50%] z-10", // Layout
+              "-translate-y-1/2", // Transforms
+              "transition delay-150 duration-200 ease-in-out", // Transistion & Animation
+              "hover:text-primary", // States
+              "text-secondary", // Typography
+              "cursor-pointer" // Interactivity
+            )}
+          />
 
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            fill="currentColor"
+          <FiChevronRight
             onClick={handleNext}
-            className="absolute right-2 top-[50%] z-10 h-12 -translate-y-1/2 cursor-pointer transition delay-150 duration-200 ease-in-out hover:fill-primary"
-          >
-            <path
-              fillRule="evenodd"
-              d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z"
-              clipRule="evenodd"
-            />
-          </svg>
+            size={48}
+            className={clsxm(
+              "absolute right-2 top-[50%] z-10", // Layout
+              "-translate-y-1/2", // Transforms
+              "transition delay-150 duration-200 ease-in-out", // Transition & Animation
+              "hover:text-primary", // States
+              "text-secondary", // Typography
+              "cursor-pointer" // Interactivity
+            )}
+          />
 
           <motion.div
             key={currentIndex}
@@ -225,33 +224,7 @@ export default function ImageSlider({ slides, duration, className = "" }) {
               "cursor-pointer" // Interactivity
             )}
           >
-            {isPaused ? (
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="currentColor"
-                className="h-12"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z"
-                  clipRule="evenodd"
-                />
-              </svg>
-            ) : (
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="currentColor"
-                className="h-12"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M6.75 5.25a.75.75 0 01.75-.75H9a.75.75 0 01.75.75v13.5a.75.75 0 01-.75.75H7.5a.75.75 0 01-.75-.75V5.25zm7.5 0A.75.75 0 0115 4.5h1.5a.75.75 0 01.75.75v13.5a.75.75 0 01-.75.75H15a.75.75 0 01-.75-.75V5.25z"
-                  clipRule="evenodd"
-                />
-              </svg>
-            )}
+            {isPaused ? <FiPlay size={48} /> : <FiPause size={48} />}
           </div>
         </div>
       )}
